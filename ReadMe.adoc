@@ -1,58 +1,16 @@
-:Author: slysam
-:Email:
-:Date: 08/04/2022
-:Revision: version#
-:License: Public Domain
+This interactive device is an electronic circuit that is able to sense
+  the environment by using a sensor (electronic components that convert 
+  real-world measurements into electrical signals). The device processes 
+  the information it gets from the sensors with behaviour that’s
+  described in the software (sketch). The device interact with the world 
+  by using actuators, electronic components that can convert 
+  an electric signal into a physical action.
 
-= Project: {Project}
-
-Describe your project
-
-== Step 1: Installation
-Please describe the steps to install this project.
-
-For example:
-
-1. Open this file
-2. Edit as you like
-3. Release to the World!
-
-== Step 2: Assemble the circuit
-
-Assemble the circuit following the diagram layout.png attached to the sketch
-
-== Step 3: Load the code
-
-Upload the code contained in this sketch on to your board
-
-=== Folder structure
-
-....
- sketch123                => Arduino sketch folder
-  âââ sketch123.ino       => main Arduino file
-  âââ schematics.png      => (optional) an image of the required schematics
-  âââ layout.png          => (optional) an image of the layout
-  âââ ReadMe.adoc         => this file
-....
-
-=== License
-This project is released under a {License} License.
-
-=== Contributing
-To contribute to this project please contact: 
-
-=== BOM
-Add the bill of the materials you need for this project.
-
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
-|===
-
-
-=== Help
-This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
-If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
-or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
+  The 4-20 mA current loop has been the standard for signal transmission 
+  and electronic control in control systems since the 1950's. In a current
+  loop, the current signal is drawn from a dc power supply, flows through 
+  the transmitter, into the controller and then back to the power supply 
+  in a series circuit. The advantage is that the current value does not 
+  degrade over long distances, so the current signal remains constant 
+  through all components in the loop. As a result, the accuracy of the 
+  signal is not affected by a voltage drop in the interconnecting wiring.
