@@ -85,7 +85,7 @@ void loop() {
 
   ArduinoCloud.update();
   float adcVal = (ina260.readCurrent()) + calCorrection; // Read current
-  currentVal = (alpha * currentVal) + ((1 - alpha) * adcVal);// Low Pass Filter
+  currentVal = (alpha * currentVal) + ((1.0 - alpha) * adcVal);// Low Pass Filter
   
   psiVal = round((15.0 * currentVal) + (-60.0)); // ideal linearity equation (r2 1.0) "Default"
   //psiVal = round((14.96079 * currentVal) + (-59.45698)); // linear regression calculation, sensor #1 (r2 0.9987)
